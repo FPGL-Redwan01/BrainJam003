@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Waypoint1
   - Enemy
+  - Girl
+  - Boy
   layers:
   - Default
   - TransparentFX
