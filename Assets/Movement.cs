@@ -48,7 +48,7 @@ public class Movement : MonoBehaviour
             StartCoroutine(StartAura());
         }
 
-        if (!m_CanMove)
+        if (!m_CanMove &&GM.Instance.StartGame)
         {
             float horizontal = Input.GetAxisRaw("Horizontal");
             float vertical = Input.GetAxisRaw("Vertical");
