@@ -516,3 +516,2062 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005158 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.64 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+There were some problems trying to locate where Odin was installed, please read the messages below.
+- Odin was not found in it's default location: 'Assets/Plugins/Sirenix/'.
+- No SirenixPathLookupScriptableObject with the Guid: '08379ccefc05200459f90a1c0711a340' was found.
+- We were unable to find Odin elsewhere. Please re-import Odin and make sure the OdinPathLookup.asset is included.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Sirenix.Utilities.SirenixAssetPaths:.cctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs:165)
+Sirenix.Utilities.SirenixGlobalConfigAttribute:.ctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixGlobalConfigAttribute.cs:20)
+System.MonoCustomAttrs:GetCustomAttributesBase (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.MonoCustomAttrs:GetCustomAttributes (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.RuntimeType:GetCustomAttributes (System.Type,bool)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type,bool) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1310)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1321)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:get_ConfigAttribute () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:52)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:LoadInstanceIfAssetExists () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:188)
+Sirenix.Serialization.UnitySerializationInitializer:Initialize () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:51)
+Sirenix.Serialization.UnitySerializationInitializer:InitializeEditor () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:96)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs Line: 165)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.746 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1746ms)
+		BeginReloadAssembly (129ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (1540ms)
+			LoadAssemblies (104ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (381ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (899ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (641ms)
+				ProcessInitializeOnLoadMethodAttributes (162ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.08 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1501 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.5 MB.
+System memory in use after: 140.0 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2080.
+Total: 27.601600 ms (FindLiveObjects: 0.189300 ms CreateObjectMapping: 0.059800 ms MarkObjects: 25.216500 ms  DeleteObjects: 2.134000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005295 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.11 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+There were some problems trying to locate where Odin was installed, please read the messages below.
+- Odin was not found in it's default location: 'Assets/Plugins/Sirenix/'.
+- No SirenixPathLookupScriptableObject with the Guid: '08379ccefc05200459f90a1c0711a340' was found.
+- We were unable to find Odin elsewhere. Please re-import Odin and make sure the OdinPathLookup.asset is included.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Sirenix.Utilities.SirenixAssetPaths:.cctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs:165)
+Sirenix.Utilities.SirenixGlobalConfigAttribute:.ctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixGlobalConfigAttribute.cs:20)
+System.MonoCustomAttrs:GetCustomAttributesBase (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.MonoCustomAttrs:GetCustomAttributes (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.RuntimeType:GetCustomAttributes (System.Type,bool)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type,bool) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1310)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1321)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:get_ConfigAttribute () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:52)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:LoadInstanceIfAssetExists () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:188)
+Sirenix.Serialization.UnitySerializationInitializer:Initialize () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:51)
+Sirenix.Serialization.UnitySerializationInitializer:InitializeEditor () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:96)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs Line: 165)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.729 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1730ms)
+		BeginReloadAssembly (139ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (55ms)
+		EndReloadAssembly (1518ms)
+			LoadAssemblies (106ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (341ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (909ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (85ms)
+				ProcessInitializeOnLoadAttributes (645ms)
+				ProcessInitializeOnLoadMethodAttributes (161ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.01 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1501 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.5 MB.
+System memory in use after: 140.0 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2082.
+Total: 27.890600 ms (FindLiveObjects: 0.172800 ms CreateObjectMapping: 0.051100 ms MarkObjects: 25.727900 ms  DeleteObjects: 1.936200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005529 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.10 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+There were some problems trying to locate where Odin was installed, please read the messages below.
+- Odin was not found in it's default location: 'Assets/Plugins/Sirenix/'.
+- No SirenixPathLookupScriptableObject with the Guid: '08379ccefc05200459f90a1c0711a340' was found.
+- We were unable to find Odin elsewhere. Please re-import Odin and make sure the OdinPathLookup.asset is included.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Sirenix.Utilities.SirenixAssetPaths:.cctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs:165)
+Sirenix.Utilities.SirenixGlobalConfigAttribute:.ctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixGlobalConfigAttribute.cs:20)
+System.MonoCustomAttrs:GetCustomAttributesBase (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.MonoCustomAttrs:GetCustomAttributes (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.RuntimeType:GetCustomAttributes (System.Type,bool)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type,bool) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1310)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1321)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:get_ConfigAttribute () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:52)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:LoadInstanceIfAssetExists () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:188)
+Sirenix.Serialization.UnitySerializationInitializer:Initialize () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:51)
+Sirenix.Serialization.UnitySerializationInitializer:InitializeEditor () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:96)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs Line: 165)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.692 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1693ms)
+		BeginReloadAssembly (123ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (46ms)
+		EndReloadAssembly (1486ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (360ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (868ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (635ms)
+				ProcessInitializeOnLoadMethodAttributes (137ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.02 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1501 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.5 MB.
+System memory in use after: 140.0 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2084.
+Total: 30.646000 ms (FindLiveObjects: 0.242200 ms CreateObjectMapping: 0.088000 ms MarkObjects: 28.066100 ms  DeleteObjects: 2.247200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005360 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+There were some problems trying to locate where Odin was installed, please read the messages below.
+- Odin was not found in it's default location: 'Assets/Plugins/Sirenix/'.
+- No SirenixPathLookupScriptableObject with the Guid: '08379ccefc05200459f90a1c0711a340' was found.
+- We were unable to find Odin elsewhere. Please re-import Odin and make sure the OdinPathLookup.asset is included.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Sirenix.Utilities.SirenixAssetPaths:.cctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs:165)
+Sirenix.Utilities.SirenixGlobalConfigAttribute:.ctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixGlobalConfigAttribute.cs:20)
+System.MonoCustomAttrs:GetCustomAttributesBase (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.MonoCustomAttrs:GetCustomAttributes (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.RuntimeType:GetCustomAttributes (System.Type,bool)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type,bool) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1310)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1321)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:get_ConfigAttribute () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:52)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:LoadInstanceIfAssetExists () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:188)
+Sirenix.Serialization.UnitySerializationInitializer:Initialize () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:51)
+Sirenix.Serialization.UnitySerializationInitializer:InitializeEditor () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:96)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs Line: 165)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.667 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1668ms)
+		BeginReloadAssembly (121ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (46ms)
+		EndReloadAssembly (1475ms)
+			LoadAssemblies (93ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (338ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (887ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (88ms)
+				ProcessInitializeOnLoadAttributes (638ms)
+				ProcessInitializeOnLoadMethodAttributes (145ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.04 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1501 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.5 MB.
+System memory in use after: 140.0 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2086.
+Total: 27.397600 ms (FindLiveObjects: 0.182000 ms CreateObjectMapping: 0.057700 ms MarkObjects: 25.082800 ms  DeleteObjects: 2.073500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005153 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.06 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+There were some problems trying to locate where Odin was installed, please read the messages below.
+- Odin was not found in it's default location: 'Assets/Plugins/Sirenix/'.
+- No SirenixPathLookupScriptableObject with the Guid: '08379ccefc05200459f90a1c0711a340' was found.
+- We were unable to find Odin elsewhere. Please re-import Odin and make sure the OdinPathLookup.asset is included.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Sirenix.Utilities.SirenixAssetPaths:.cctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs:165)
+Sirenix.Utilities.SirenixGlobalConfigAttribute:.ctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixGlobalConfigAttribute.cs:20)
+System.MonoCustomAttrs:GetCustomAttributesBase (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.MonoCustomAttrs:GetCustomAttributes (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.RuntimeType:GetCustomAttributes (System.Type,bool)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type,bool) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1310)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1321)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:get_ConfigAttribute () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:52)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:LoadInstanceIfAssetExists () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:188)
+Sirenix.Serialization.UnitySerializationInitializer:Initialize () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:51)
+Sirenix.Serialization.UnitySerializationInitializer:InitializeEditor () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:96)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs Line: 165)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.724 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1725ms)
+		BeginReloadAssembly (124ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (46ms)
+		EndReloadAssembly (1529ms)
+			LoadAssemblies (96ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (359ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (914ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (83ms)
+				ProcessInitializeOnLoadAttributes (669ms)
+				ProcessInitializeOnLoadMethodAttributes (146ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.02 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1501 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.5 MB.
+System memory in use after: 140.0 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2088.
+Total: 29.710700 ms (FindLiveObjects: 0.189000 ms CreateObjectMapping: 0.070300 ms MarkObjects: 27.121200 ms  DeleteObjects: 2.324900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006774 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+There were some problems trying to locate where Odin was installed, please read the messages below.
+- Odin was not found in it's default location: 'Assets/Plugins/Sirenix/'.
+- No SirenixPathLookupScriptableObject with the Guid: '08379ccefc05200459f90a1c0711a340' was found.
+- We were unable to find Odin elsewhere. Please re-import Odin and make sure the OdinPathLookup.asset is included.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Sirenix.Utilities.SirenixAssetPaths:.cctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs:165)
+Sirenix.Utilities.SirenixGlobalConfigAttribute:.ctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixGlobalConfigAttribute.cs:20)
+System.MonoCustomAttrs:GetCustomAttributesBase (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.MonoCustomAttrs:GetCustomAttributes (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.RuntimeType:GetCustomAttributes (System.Type,bool)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type,bool) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1310)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1321)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:get_ConfigAttribute () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:52)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:LoadInstanceIfAssetExists () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:188)
+Sirenix.Serialization.UnitySerializationInitializer:Initialize () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:51)
+Sirenix.Serialization.UnitySerializationInitializer:InitializeEditor () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:96)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs Line: 165)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.664 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1665ms)
+		BeginReloadAssembly (137ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (1447ms)
+			LoadAssemblies (103ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (329ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (862ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (83ms)
+				ProcessInitializeOnLoadAttributes (620ms)
+				ProcessInitializeOnLoadMethodAttributes (143ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.71 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1501 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.5 MB.
+System memory in use after: 140.0 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2090.
+Total: 31.394400 ms (FindLiveObjects: 0.325800 ms CreateObjectMapping: 0.075000 ms MarkObjects: 28.565300 ms  DeleteObjects: 2.425600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005151 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.12 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+There were some problems trying to locate where Odin was installed, please read the messages below.
+- Odin was not found in it's default location: 'Assets/Plugins/Sirenix/'.
+- No SirenixPathLookupScriptableObject with the Guid: '08379ccefc05200459f90a1c0711a340' was found.
+- We were unable to find Odin elsewhere. Please re-import Odin and make sure the OdinPathLookup.asset is included.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Sirenix.Utilities.SirenixAssetPaths:.cctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs:165)
+Sirenix.Utilities.SirenixGlobalConfigAttribute:.ctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixGlobalConfigAttribute.cs:20)
+System.MonoCustomAttrs:GetCustomAttributesBase (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.MonoCustomAttrs:GetCustomAttributes (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.RuntimeType:GetCustomAttributes (System.Type,bool)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type,bool) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1310)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1321)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:get_ConfigAttribute () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:52)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:LoadInstanceIfAssetExists () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:188)
+Sirenix.Serialization.UnitySerializationInitializer:Initialize () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:51)
+Sirenix.Serialization.UnitySerializationInitializer:InitializeEditor () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:96)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs Line: 165)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.678 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1678ms)
+		BeginReloadAssembly (128ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (1481ms)
+			LoadAssemblies (96ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (335ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (882ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (96ms)
+				ProcessInitializeOnLoadAttributes (601ms)
+				ProcessInitializeOnLoadMethodAttributes (169ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.06 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1501 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.6 MB.
+System memory in use after: 140.0 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2092.
+Total: 26.828600 ms (FindLiveObjects: 0.202300 ms CreateObjectMapping: 0.067400 ms MarkObjects: 24.378500 ms  DeleteObjects: 2.177800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006330 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.02 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+There were some problems trying to locate where Odin was installed, please read the messages below.
+- Odin was not found in it's default location: 'Assets/Plugins/Sirenix/'.
+- No SirenixPathLookupScriptableObject with the Guid: '08379ccefc05200459f90a1c0711a340' was found.
+- We were unable to find Odin elsewhere. Please re-import Odin and make sure the OdinPathLookup.asset is included.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Sirenix.Utilities.SirenixAssetPaths:.cctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs:165)
+Sirenix.Utilities.SirenixGlobalConfigAttribute:.ctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixGlobalConfigAttribute.cs:20)
+System.MonoCustomAttrs:GetCustomAttributesBase (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.MonoCustomAttrs:GetCustomAttributes (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.RuntimeType:GetCustomAttributes (System.Type,bool)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type,bool) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1310)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1321)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:get_ConfigAttribute () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:52)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:LoadInstanceIfAssetExists () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:188)
+Sirenix.Serialization.UnitySerializationInitializer:Initialize () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:51)
+Sirenix.Serialization.UnitySerializationInitializer:InitializeEditor () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:96)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs Line: 165)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.658 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1658ms)
+		BeginReloadAssembly (126ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (1464ms)
+			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (345ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (872ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (605ms)
+				ProcessInitializeOnLoadMethodAttributes (169ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.28 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1501 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.6 MB.
+System memory in use after: 140.0 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2094.
+Total: 30.419300 ms (FindLiveObjects: 0.192000 ms CreateObjectMapping: 0.061400 ms MarkObjects: 28.110200 ms  DeleteObjects: 2.053900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006425 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.06 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+There were some problems trying to locate where Odin was installed, please read the messages below.
+- Odin was not found in it's default location: 'Assets/Plugins/Sirenix/'.
+- No SirenixPathLookupScriptableObject with the Guid: '08379ccefc05200459f90a1c0711a340' was found.
+- We were unable to find Odin elsewhere. Please re-import Odin and make sure the OdinPathLookup.asset is included.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Sirenix.Utilities.SirenixAssetPaths:.cctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs:165)
+Sirenix.Utilities.SirenixGlobalConfigAttribute:.ctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixGlobalConfigAttribute.cs:20)
+System.MonoCustomAttrs:GetCustomAttributesBase (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.MonoCustomAttrs:GetCustomAttributes (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.RuntimeType:GetCustomAttributes (System.Type,bool)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type,bool) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1310)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1321)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:get_ConfigAttribute () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:52)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:LoadInstanceIfAssetExists () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:188)
+Sirenix.Serialization.UnitySerializationInitializer:Initialize () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:51)
+Sirenix.Serialization.UnitySerializationInitializer:InitializeEditor () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:96)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs Line: 165)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.831 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1831ms)
+		BeginReloadAssembly (123ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (1635ms)
+			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (350ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (1038ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (799ms)
+				ProcessInitializeOnLoadMethodAttributes (145ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.02 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1501 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.6 MB.
+System memory in use after: 140.0 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2096.
+Total: 27.892200 ms (FindLiveObjects: 0.173000 ms CreateObjectMapping: 0.073200 ms MarkObjects: 25.703000 ms  DeleteObjects: 1.941300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006123 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.09 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+There were some problems trying to locate where Odin was installed, please read the messages below.
+- Odin was not found in it's default location: 'Assets/Plugins/Sirenix/'.
+- No SirenixPathLookupScriptableObject with the Guid: '08379ccefc05200459f90a1c0711a340' was found.
+- We were unable to find Odin elsewhere. Please re-import Odin and make sure the OdinPathLookup.asset is included.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Sirenix.Utilities.SirenixAssetPaths:.cctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs:165)
+Sirenix.Utilities.SirenixGlobalConfigAttribute:.ctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixGlobalConfigAttribute.cs:20)
+System.MonoCustomAttrs:GetCustomAttributesBase (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.MonoCustomAttrs:GetCustomAttributes (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.RuntimeType:GetCustomAttributes (System.Type,bool)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type,bool) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1310)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1321)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:get_ConfigAttribute () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:52)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:LoadInstanceIfAssetExists () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:188)
+Sirenix.Serialization.UnitySerializationInitializer:Initialize () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:51)
+Sirenix.Serialization.UnitySerializationInitializer:InitializeEditor () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:96)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs Line: 165)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.684 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1685ms)
+		BeginReloadAssembly (133ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (1475ms)
+			LoadAssemblies (105ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (347ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (884ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (636ms)
+				ProcessInitializeOnLoadMethodAttributes (156ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1501 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.6 MB.
+System memory in use after: 140.0 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2098.
+Total: 37.290400 ms (FindLiveObjects: 0.229700 ms CreateObjectMapping: 0.066600 ms MarkObjects: 34.914100 ms  DeleteObjects: 2.076900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1385.227369 seconds.
+  path: Assets/PngItem_2036790.png
+  artifactKey: Guid(0987c0a7b4c8bd746936e7dea2229792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PngItem_2036790.png using Guid(0987c0a7b4c8bd746936e7dea2229792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3c7f51f1c4de7717380b58339451c0b') in 0.226717 seconds 
+  Import took 0.236020 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.036611 seconds.
+  path: Assets/PngItem_2036790.png
+  artifactKey: Guid(0987c0a7b4c8bd746936e7dea2229792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PngItem_2036790.png using Guid(0987c0a7b4c8bd746936e7dea2229792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1031189b34b8825d96f8e2f719e1371a') in 0.041004 seconds 
+  Import took 0.048152 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 131.081572 seconds.
+  path: Assets/kindpng_1017583.png
+  artifactKey: Guid(7a4c4b14d462b58408ba19830eeb26d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kindpng_1017583.png using Guid(7a4c4b14d462b58408ba19830eeb26d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5c9788ec821a9fa115f0a5884a41c1f') in 0.039982 seconds 
+  Import took 0.045615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.825741 seconds.
+  path: Assets/LookAtCamera.cs
+  artifactKey: Guid(dbcca2088fa3ecb43909e8dfa21a7471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LookAtCamera.cs using Guid(dbcca2088fa3ecb43909e8dfa21a7471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a19270e247ae1b093fa6f27fe29c59c5') in 0.030953 seconds 
+  Import took 0.035350 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.942514 seconds.
+  path: Assets/space-button.png
+  artifactKey: Guid(2709780d879d58148838c4bd619cc4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/space-button.png using Guid(2709780d879d58148838c4bd619cc4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee218f82d102456b0a69f269c3640593') in 0.020814 seconds 
+  Import took 0.026422 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.264056 seconds.
+  path: Assets/space-button.png
+  artifactKey: Guid(2709780d879d58148838c4bd619cc4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/space-button.png using Guid(2709780d879d58148838c4bd619cc4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '812325c820f69e0829f5f9ec9cbcc096') in 0.026893 seconds 
+  Import took 0.031950 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.506511 seconds.
+  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Misc/cfxr font AmazGoDaBold.png
+  artifactKey: Guid(7ab74e659e1f0a34d9cfec21c478fc12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Misc/cfxr font AmazGoDaBold.png using Guid(7ab74e659e1f0a34d9cfec21c478fc12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caedc1a40716ff3bb1117f51db22c059') in 0.357640 seconds 
+  Import took 0.368979 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006312 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+There were some problems trying to locate where Odin was installed, please read the messages below.
+- Odin was not found in it's default location: 'Assets/Plugins/Sirenix/'.
+- No SirenixPathLookupScriptableObject with the Guid: '08379ccefc05200459f90a1c0711a340' was found.
+- We were unable to find Odin elsewhere. Please re-import Odin and make sure the OdinPathLookup.asset is included.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Sirenix.Utilities.SirenixAssetPaths:.cctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs:165)
+Sirenix.Utilities.SirenixGlobalConfigAttribute:.ctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixGlobalConfigAttribute.cs:20)
+System.MonoCustomAttrs:GetCustomAttributesBase (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.MonoCustomAttrs:GetCustomAttributes (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.RuntimeType:GetCustomAttributes (System.Type,bool)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type,bool) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1310)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1321)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:get_ConfigAttribute () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:52)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:LoadInstanceIfAssetExists () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:188)
+Sirenix.Serialization.UnitySerializationInitializer:Initialize () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:51)
+Sirenix.Serialization.UnitySerializationInitializer:InitializeEditor () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:96)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs Line: 165)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.768 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1769ms)
+		BeginReloadAssembly (163ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (76ms)
+		EndReloadAssembly (1535ms)
+			LoadAssemblies (113ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (339ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (924ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (84ms)
+				ProcessInitializeOnLoadAttributes (674ms)
+				ProcessInitializeOnLoadMethodAttributes (147ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.23 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1502 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.8 MB.
+System memory in use after: 140.2 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2219.
+Total: 35.962500 ms (FindLiveObjects: 0.238300 ms CreateObjectMapping: 0.067400 ms MarkObjects: 33.317100 ms  DeleteObjects: 2.337500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005676 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.14 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+There were some problems trying to locate where Odin was installed, please read the messages below.
+- Odin was not found in it's default location: 'Assets/Plugins/Sirenix/'.
+- No SirenixPathLookupScriptableObject with the Guid: '08379ccefc05200459f90a1c0711a340' was found.
+- We were unable to find Odin elsewhere. Please re-import Odin and make sure the OdinPathLookup.asset is included.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Sirenix.Utilities.SirenixAssetPaths:.cctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs:165)
+Sirenix.Utilities.SirenixGlobalConfigAttribute:.ctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixGlobalConfigAttribute.cs:20)
+System.MonoCustomAttrs:GetCustomAttributesBase (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.MonoCustomAttrs:GetCustomAttributes (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.RuntimeType:GetCustomAttributes (System.Type,bool)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type,bool) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1310)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1321)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:get_ConfigAttribute () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:52)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:LoadInstanceIfAssetExists () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:188)
+Sirenix.Serialization.UnitySerializationInitializer:Initialize () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:51)
+Sirenix.Serialization.UnitySerializationInitializer:InitializeEditor () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:96)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs Line: 165)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.744 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1745ms)
+		BeginReloadAssembly (130ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (1544ms)
+			LoadAssemblies (103ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (356ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (917ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (82ms)
+				ProcessInitializeOnLoadAttributes (674ms)
+				ProcessInitializeOnLoadMethodAttributes (143ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.05 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1502 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.8 MB.
+System memory in use after: 140.3 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2221.
+Total: 26.607100 ms (FindLiveObjects: 0.208900 ms CreateObjectMapping: 0.060200 ms MarkObjects: 24.416500 ms  DeleteObjects: 1.919400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006571 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.12 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+There were some problems trying to locate where Odin was installed, please read the messages below.
+- Odin was not found in it's default location: 'Assets/Plugins/Sirenix/'.
+- No SirenixPathLookupScriptableObject with the Guid: '08379ccefc05200459f90a1c0711a340' was found.
+- We were unable to find Odin elsewhere. Please re-import Odin and make sure the OdinPathLookup.asset is included.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Sirenix.Utilities.SirenixAssetPaths:.cctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs:165)
+Sirenix.Utilities.SirenixGlobalConfigAttribute:.ctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixGlobalConfigAttribute.cs:20)
+System.MonoCustomAttrs:GetCustomAttributesBase (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.MonoCustomAttrs:GetCustomAttributes (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.RuntimeType:GetCustomAttributes (System.Type,bool)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type,bool) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1310)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1321)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:get_ConfigAttribute () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:52)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:LoadInstanceIfAssetExists () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:188)
+Sirenix.Serialization.UnitySerializationInitializer:Initialize () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:51)
+Sirenix.Serialization.UnitySerializationInitializer:InitializeEditor () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:96)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs Line: 165)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.772 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1773ms)
+		BeginReloadAssembly (136ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (56ms)
+		EndReloadAssembly (1569ms)
+			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (382ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (941ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (665ms)
+				ProcessInitializeOnLoadMethodAttributes (168ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.22 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1502 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.8 MB.
+System memory in use after: 140.3 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2223.
+Total: 33.767000 ms (FindLiveObjects: 0.194100 ms CreateObjectMapping: 0.058700 ms MarkObjects: 31.029900 ms  DeleteObjects: 2.482500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005300 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.16 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+There were some problems trying to locate where Odin was installed, please read the messages below.
+- Odin was not found in it's default location: 'Assets/Plugins/Sirenix/'.
+- No SirenixPathLookupScriptableObject with the Guid: '08379ccefc05200459f90a1c0711a340' was found.
+- We were unable to find Odin elsewhere. Please re-import Odin and make sure the OdinPathLookup.asset is included.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Sirenix.Utilities.SirenixAssetPaths:.cctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs:165)
+Sirenix.Utilities.SirenixGlobalConfigAttribute:.ctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixGlobalConfigAttribute.cs:20)
+System.MonoCustomAttrs:GetCustomAttributesBase (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.MonoCustomAttrs:GetCustomAttributes (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.RuntimeType:GetCustomAttributes (System.Type,bool)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type,bool) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1310)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1321)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:get_ConfigAttribute () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:52)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:LoadInstanceIfAssetExists () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:188)
+Sirenix.Serialization.UnitySerializationInitializer:Initialize () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:51)
+Sirenix.Serialization.UnitySerializationInitializer:InitializeEditor () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:96)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs Line: 165)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.088 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2089ms)
+		BeginReloadAssembly (123ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (1895ms)
+			LoadAssemblies (98ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (345ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (1253ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (179ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (111ms)
+				BeforeProcessingInitializeOnLoad (159ms)
+				ProcessInitializeOnLoadAttributes (622ms)
+				ProcessInitializeOnLoadMethodAttributes (174ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.83 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1502 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.8 MB.
+System memory in use after: 140.3 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2225.
+Total: 29.685600 ms (FindLiveObjects: 0.224200 ms CreateObjectMapping: 0.058100 ms MarkObjects: 27.347000 ms  DeleteObjects: 2.054300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 412.969889 seconds.
+  path: Assets/story.unity
+  artifactKey: Guid(55d89049e6e127e47a93db960850408c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/story.unity using Guid(55d89049e6e127e47a93db960850408c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e72bb912614f6bc36002008b5a96b929') in 0.062851 seconds 
+  Import took 0.070221 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.156325 seconds.
+  path: Assets/Tutorial.unity
+  artifactKey: Guid(429c3fec2f5e1f94982c6426b78c0f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorial.unity using Guid(429c3fec2f5e1f94982c6426b78c0f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3445fe98a4ac58c9353c857ce22412e') in 0.015293 seconds 
+  Import took 0.021234 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005803 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.04 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+There were some problems trying to locate where Odin was installed, please read the messages below.
+- Odin was not found in it's default location: 'Assets/Plugins/Sirenix/'.
+- No SirenixPathLookupScriptableObject with the Guid: '08379ccefc05200459f90a1c0711a340' was found.
+- We were unable to find Odin elsewhere. Please re-import Odin and make sure the OdinPathLookup.asset is included.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Sirenix.Utilities.SirenixAssetPaths:.cctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs:165)
+Sirenix.Utilities.SirenixGlobalConfigAttribute:.ctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixGlobalConfigAttribute.cs:20)
+System.MonoCustomAttrs:GetCustomAttributesBase (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.MonoCustomAttrs:GetCustomAttributes (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.RuntimeType:GetCustomAttributes (System.Type,bool)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type,bool) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1310)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1321)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:get_ConfigAttribute () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:52)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:LoadInstanceIfAssetExists () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:188)
+Sirenix.Serialization.UnitySerializationInitializer:Initialize () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:51)
+Sirenix.Serialization.UnitySerializationInitializer:InitializeEditor () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:96)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs Line: 165)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.718 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1718ms)
+		BeginReloadAssembly (147ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (61ms)
+		EndReloadAssembly (1494ms)
+			LoadAssemblies (111ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (340ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (896ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (642ms)
+				ProcessInitializeOnLoadMethodAttributes (158ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.07 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1502 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.8 MB.
+System memory in use after: 140.3 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2227.
+Total: 38.107400 ms (FindLiveObjects: 0.216800 ms CreateObjectMapping: 0.062500 ms MarkObjects: 35.553900 ms  DeleteObjects: 2.271800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 8.163751 seconds.
+  path: Assets/Tutorial.unity
+  artifactKey: Guid(429c3fec2f5e1f94982c6426b78c0f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorial.unity using Guid(429c3fec2f5e1f94982c6426b78c0f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56ce356bc69a8fa4e86a3be39538191d') in 0.019201 seconds 
+  Import took 0.026376 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005241 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.14 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+There were some problems trying to locate where Odin was installed, please read the messages below.
+- Odin was not found in it's default location: 'Assets/Plugins/Sirenix/'.
+- No SirenixPathLookupScriptableObject with the Guid: '08379ccefc05200459f90a1c0711a340' was found.
+- We were unable to find Odin elsewhere. Please re-import Odin and make sure the OdinPathLookup.asset is included.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Sirenix.Utilities.SirenixAssetPaths:.cctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs:165)
+Sirenix.Utilities.SirenixGlobalConfigAttribute:.ctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixGlobalConfigAttribute.cs:20)
+System.MonoCustomAttrs:GetCustomAttributesBase (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.MonoCustomAttrs:GetCustomAttributes (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.RuntimeType:GetCustomAttributes (System.Type,bool)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type,bool) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1310)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1321)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:get_ConfigAttribute () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:52)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:LoadInstanceIfAssetExists () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:188)
+Sirenix.Serialization.UnitySerializationInitializer:Initialize () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:51)
+Sirenix.Serialization.UnitySerializationInitializer:InitializeEditor () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:96)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs Line: 165)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.759 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1760ms)
+		BeginReloadAssembly (128ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (1558ms)
+			LoadAssemblies (102ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (347ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (929ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (84ms)
+				ProcessInitializeOnLoadAttributes (678ms)
+				ProcessInitializeOnLoadMethodAttributes (151ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.09 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1502 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.9 MB.
+System memory in use after: 140.3 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2229.
+Total: 29.977400 ms (FindLiveObjects: 0.192300 ms CreateObjectMapping: 0.060800 ms MarkObjects: 27.709500 ms  DeleteObjects: 2.012300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006616 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.14 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+There were some problems trying to locate where Odin was installed, please read the messages below.
+- Odin was not found in it's default location: 'Assets/Plugins/Sirenix/'.
+- No SirenixPathLookupScriptableObject with the Guid: '08379ccefc05200459f90a1c0711a340' was found.
+- We were unable to find Odin elsewhere. Please re-import Odin and make sure the OdinPathLookup.asset is included.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Sirenix.Utilities.SirenixAssetPaths:.cctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs:165)
+Sirenix.Utilities.SirenixGlobalConfigAttribute:.ctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixGlobalConfigAttribute.cs:20)
+System.MonoCustomAttrs:GetCustomAttributesBase (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.MonoCustomAttrs:GetCustomAttributes (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.RuntimeType:GetCustomAttributes (System.Type,bool)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type,bool) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1310)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1321)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:get_ConfigAttribute () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:52)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:LoadInstanceIfAssetExists () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:188)
+Sirenix.Serialization.UnitySerializationInitializer:Initialize () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:51)
+Sirenix.Serialization.UnitySerializationInitializer:InitializeEditor () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:96)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs Line: 165)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.725 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1726ms)
+		BeginReloadAssembly (136ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (53ms)
+		EndReloadAssembly (1517ms)
+			LoadAssemblies (110ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (341ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (883ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (641ms)
+				ProcessInitializeOnLoadMethodAttributes (148ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.28 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1502 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.9 MB.
+System memory in use after: 140.3 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2231.
+Total: 67.195200 ms (FindLiveObjects: 0.211800 ms CreateObjectMapping: 0.064800 ms MarkObjects: 60.951400 ms  DeleteObjects: 5.964500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006222 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.06 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+There were some problems trying to locate where Odin was installed, please read the messages below.
+- Odin was not found in it's default location: 'Assets/Plugins/Sirenix/'.
+- No SirenixPathLookupScriptableObject with the Guid: '08379ccefc05200459f90a1c0711a340' was found.
+- We were unable to find Odin elsewhere. Please re-import Odin and make sure the OdinPathLookup.asset is included.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Sirenix.Utilities.SirenixAssetPaths:.cctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs:165)
+Sirenix.Utilities.SirenixGlobalConfigAttribute:.ctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixGlobalConfigAttribute.cs:20)
+System.MonoCustomAttrs:GetCustomAttributesBase (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.MonoCustomAttrs:GetCustomAttributes (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.RuntimeType:GetCustomAttributes (System.Type,bool)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type,bool) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1310)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1321)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:get_ConfigAttribute () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:52)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:LoadInstanceIfAssetExists () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:188)
+Sirenix.Serialization.UnitySerializationInitializer:Initialize () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:51)
+Sirenix.Serialization.UnitySerializationInitializer:InitializeEditor () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:96)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs Line: 165)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.745 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1746ms)
+		BeginReloadAssembly (136ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (53ms)
+		EndReloadAssembly (1533ms)
+			LoadAssemblies (102ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (347ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (904ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (82ms)
+				ProcessInitializeOnLoadAttributes (660ms)
+				ProcessInitializeOnLoadMethodAttributes (145ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.72 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1502 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.9 MB.
+System memory in use after: 140.3 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2233.
+Total: 34.740800 ms (FindLiveObjects: 0.374600 ms CreateObjectMapping: 0.077100 ms MarkObjects: 32.004800 ms  DeleteObjects: 2.275800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005808 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.22 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+There were some problems trying to locate where Odin was installed, please read the messages below.
+- Odin was not found in it's default location: 'Assets/Plugins/Sirenix/'.
+- No SirenixPathLookupScriptableObject with the Guid: '08379ccefc05200459f90a1c0711a340' was found.
+- We were unable to find Odin elsewhere. Please re-import Odin and make sure the OdinPathLookup.asset is included.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Sirenix.Utilities.SirenixAssetPaths:.cctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs:165)
+Sirenix.Utilities.SirenixGlobalConfigAttribute:.ctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixGlobalConfigAttribute.cs:20)
+System.MonoCustomAttrs:GetCustomAttributesBase (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.MonoCustomAttrs:GetCustomAttributes (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.RuntimeType:GetCustomAttributes (System.Type,bool)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type,bool) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1310)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1321)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:get_ConfigAttribute () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:52)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:LoadInstanceIfAssetExists () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:188)
+Sirenix.Serialization.UnitySerializationInitializer:Initialize () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:51)
+Sirenix.Serialization.UnitySerializationInitializer:InitializeEditor () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:96)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs Line: 165)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.815 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1815ms)
+		BeginReloadAssembly (136ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (1609ms)
+			LoadAssemblies (102ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (372ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (950ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (83ms)
+				ProcessInitializeOnLoadAttributes (690ms)
+				ProcessInitializeOnLoadMethodAttributes (159ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.16 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1502 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.9 MB.
+System memory in use after: 140.3 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2235.
+Total: 27.902300 ms (FindLiveObjects: 0.225300 ms CreateObjectMapping: 0.086100 ms MarkObjects: 25.415300 ms  DeleteObjects: 2.173800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005940 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.10 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+There were some problems trying to locate where Odin was installed, please read the messages below.
+- Odin was not found in it's default location: 'Assets/Plugins/Sirenix/'.
+- No SirenixPathLookupScriptableObject with the Guid: '08379ccefc05200459f90a1c0711a340' was found.
+- We were unable to find Odin elsewhere. Please re-import Odin and make sure the OdinPathLookup.asset is included.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Sirenix.Utilities.SirenixAssetPaths:.cctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs:165)
+Sirenix.Utilities.SirenixGlobalConfigAttribute:.ctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixGlobalConfigAttribute.cs:20)
+System.MonoCustomAttrs:GetCustomAttributesBase (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.MonoCustomAttrs:GetCustomAttributes (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.RuntimeType:GetCustomAttributes (System.Type,bool)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type,bool) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1310)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1321)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:get_ConfigAttribute () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:52)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:LoadInstanceIfAssetExists () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:188)
+Sirenix.Serialization.UnitySerializationInitializer:Initialize () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:51)
+Sirenix.Serialization.UnitySerializationInitializer:InitializeEditor () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:96)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs Line: 165)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.694 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1695ms)
+		BeginReloadAssembly (131ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (1493ms)
+			LoadAssemblies (103ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (343ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (882ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (637ms)
+				ProcessInitializeOnLoadMethodAttributes (147ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.10 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1502 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.9 MB.
+System memory in use after: 140.4 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2237.
+Total: 28.478300 ms (FindLiveObjects: 0.204100 ms CreateObjectMapping: 0.061900 ms MarkObjects: 25.720700 ms  DeleteObjects: 2.488900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 297.290586 seconds.
+  path: Assets/Tutorial.unity
+  artifactKey: Guid(429c3fec2f5e1f94982c6426b78c0f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorial.unity using Guid(429c3fec2f5e1f94982c6426b78c0f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2f47d945c36caa42a8183e95dc3c223') in 0.065834 seconds 
+  Import took 0.074680 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005798 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.20 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+There were some problems trying to locate where Odin was installed, please read the messages below.
+- Odin was not found in it's default location: 'Assets/Plugins/Sirenix/'.
+- No SirenixPathLookupScriptableObject with the Guid: '08379ccefc05200459f90a1c0711a340' was found.
+- We were unable to find Odin elsewhere. Please re-import Odin and make sure the OdinPathLookup.asset is included.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Sirenix.Utilities.SirenixAssetPaths:.cctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs:165)
+Sirenix.Utilities.SirenixGlobalConfigAttribute:.ctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixGlobalConfigAttribute.cs:20)
+System.MonoCustomAttrs:GetCustomAttributesBase (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.MonoCustomAttrs:GetCustomAttributes (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.RuntimeType:GetCustomAttributes (System.Type,bool)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type,bool) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1310)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1321)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:get_ConfigAttribute () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:52)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:LoadInstanceIfAssetExists () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:188)
+Sirenix.Serialization.UnitySerializationInitializer:Initialize () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:51)
+Sirenix.Serialization.UnitySerializationInitializer:InitializeEditor () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:96)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs Line: 165)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.781 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1781ms)
+		BeginReloadAssembly (129ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (1580ms)
+			LoadAssemblies (102ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (347ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (961ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (93ms)
+				ProcessInitializeOnLoadAttributes (670ms)
+				ProcessInitializeOnLoadMethodAttributes (182ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.09 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1502 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.9 MB.
+System memory in use after: 140.4 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2239.
+Total: 29.459100 ms (FindLiveObjects: 0.226600 ms CreateObjectMapping: 0.087900 ms MarkObjects: 26.875000 ms  DeleteObjects: 2.267100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008762 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+There were some problems trying to locate where Odin was installed, please read the messages below.
+- Odin was not found in it's default location: 'Assets/Plugins/Sirenix/'.
+- No SirenixPathLookupScriptableObject with the Guid: '08379ccefc05200459f90a1c0711a340' was found.
+- We were unable to find Odin elsewhere. Please re-import Odin and make sure the OdinPathLookup.asset is included.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Sirenix.Utilities.SirenixAssetPaths:.cctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs:165)
+Sirenix.Utilities.SirenixGlobalConfigAttribute:.ctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixGlobalConfigAttribute.cs:20)
+System.MonoCustomAttrs:GetCustomAttributesBase (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.MonoCustomAttrs:GetCustomAttributes (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.RuntimeType:GetCustomAttributes (System.Type,bool)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type,bool) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1310)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1321)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:get_ConfigAttribute () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:52)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:LoadInstanceIfAssetExists () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:188)
+Sirenix.Serialization.UnitySerializationInitializer:Initialize () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:51)
+Sirenix.Serialization.UnitySerializationInitializer:InitializeEditor () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:96)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs Line: 165)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.668 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1669ms)
+		BeginReloadAssembly (148ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (58ms)
+		EndReloadAssembly (1452ms)
+			LoadAssemblies (103ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (354ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (830ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (597ms)
+				ProcessInitializeOnLoadMethodAttributes (140ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.11 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1502 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.9 MB.
+System memory in use after: 140.4 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2241.
+Total: 32.735400 ms (FindLiveObjects: 0.402600 ms CreateObjectMapping: 0.096800 ms MarkObjects: 30.204500 ms  DeleteObjects: 2.029200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005007 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.07 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+There were some problems trying to locate where Odin was installed, please read the messages below.
+- Odin was not found in it's default location: 'Assets/Plugins/Sirenix/'.
+- No SirenixPathLookupScriptableObject with the Guid: '08379ccefc05200459f90a1c0711a340' was found.
+- We were unable to find Odin elsewhere. Please re-import Odin and make sure the OdinPathLookup.asset is included.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Sirenix.Utilities.SirenixAssetPaths:.cctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs:165)
+Sirenix.Utilities.SirenixGlobalConfigAttribute:.ctor () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixGlobalConfigAttribute.cs:20)
+System.MonoCustomAttrs:GetCustomAttributesBase (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.MonoCustomAttrs:GetCustomAttributes (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+System.RuntimeType:GetCustomAttributes (System.Type,bool)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type,bool) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1310)
+Sirenix.Utilities.TypeExtensions:GetCustomAttribute<Sirenix.Utilities.GlobalConfigAttribute> (System.Type) (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Extensions/TypeExtensions.cs:1321)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:get_ConfigAttribute () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:52)
+Sirenix.Utilities.GlobalConfig`1<Sirenix.Serialization.GlobalSerializationConfig>:LoadInstanceIfAssetExists () (at Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/GlobalConfig.cs:188)
+Sirenix.Serialization.UnitySerializationInitializer:Initialize () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:51)
+Sirenix.Serialization.UnitySerializationInitializer:InitializeEditor () (at Y:/Repositories/sirenix-development-framework/OdinSerializer/OdinSerializer/Unity Integration/UnitySerializationInitializer.cs:96)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Y:/Repositories/sirenix-development-framework/Sirenix Solution/Sirenix.Utilities/Misc/SirenixAssetPaths.cs Line: 165)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.523 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2523ms)
+		BeginReloadAssembly (121ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (46ms)
+		EndReloadAssembly (2334ms)
+			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (314ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (1771ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (1533ms)
+				ProcessInitializeOnLoadMethodAttributes (145ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.10 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1502 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.9 MB.
+System memory in use after: 130.4 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2243.
+Total: 30.592100 ms (FindLiveObjects: 0.192200 ms CreateObjectMapping: 0.058900 ms MarkObjects: 28.382800 ms  DeleteObjects: 1.956000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.12 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.6 MB.
+System memory in use after: 86.1 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2243.
+Total: 29.085400 ms (FindLiveObjects: 0.304600 ms CreateObjectMapping: 0.120500 ms MarkObjects: 26.495800 ms  DeleteObjects: 2.162400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.86 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.6 MB.
+System memory in use after: 86.1 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2243.
+Total: 29.171100 ms (FindLiveObjects: 0.316200 ms CreateObjectMapping: 0.089800 ms MarkObjects: 26.709100 ms  DeleteObjects: 2.053800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 10.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.6 MB.
+System memory in use after: 86.1 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2243.
+Total: 67.062100 ms (FindLiveObjects: 0.314300 ms CreateObjectMapping: 0.078100 ms MarkObjects: 63.684200 ms  DeleteObjects: 2.982600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.6 MB.
+System memory in use after: 86.1 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2243.
+Total: 55.294500 ms (FindLiveObjects: 0.230600 ms CreateObjectMapping: 0.065900 ms MarkObjects: 51.608100 ms  DeleteObjects: 3.387600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
