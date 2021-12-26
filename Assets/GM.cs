@@ -3,37 +3,42 @@ using System.Collections.Generic;
 using UnityEngine;
 
 using Singleton;
-
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GM : Singleton<GM>
 {
-    public GameObject ThreeLabour;
+    public GameObject ThreeLabour , Lover;
     public int Point;
     public Text SpreadText;
 
-    public int Count;   
-    public GameObject StartPanel;
+    public int Count;
+    public GameObject StartPanel, LoosePnel, WinPanel;
     public bool StartGame;
 
-    public float NPC1Time, NPC2Time, NPC3Time, NPC4Time;
-    public GameObject NPC1, NPC2, NPC3, NPC4;
+    public float NPC1Time, NPC2Time, NPC3Time, NPC4Time , NPC5Time;
+    public GameObject NPC1, NPC2, NPC3, NPC4 , NPC5;
 
+
+   public bool FinalSpawn;
     public override void Start()
     {
         base.Start();
         GM.Instance.StartCoroutine(GM.Instance.Spawn1());
         GM.Instance.StartCoroutine(GM.Instance.Spawn2());
         GM.Instance.StartCoroutine(GM.Instance.Spawn3());
-        GM.Instance.StartCoroutine(GM.Instance.Spawn4());
+        GM.Instance.StartCoroutine(GM.Instance.Spawn4()); GM.Instance.StartCoroutine(GM.Instance.Spawn5());
     }
-    public void IncreaePoints(int count)
+    public void IncreaePoints()
     {
-        Point += count;
-       SpreadText.text = Point.ToString();
+       
+       SpreadText.text =100.ToString();
 
     }
-
+    public void Reset()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
     public void StartIt()
     {
         StartPanel.gameObject.SetActive(false);
@@ -70,6 +75,16 @@ public class GM : Singleton<GM>
         {
             yield return new WaitForSeconds(NPC4Time);
             NPC4.SetActive(true);
+        }
+    }
+    public IEnumerator Spawn5()
+    {
+        if (NPC5 != null)
+        {
+            yield return new WaitForSeconds(NPC5Time);
+            NPC5.SetActive(true);
+            yield return new WaitForSeconds(3);
+            FinalSpawn = true;
         }
     }
 }

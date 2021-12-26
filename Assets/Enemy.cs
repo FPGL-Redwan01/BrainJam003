@@ -28,10 +28,10 @@ public class Enemy : MonoBehaviour
         colliders = GetComponentInChildren<Collider>();
         if (npc == NpcType.CoupleBoy || npc == NpcType.CoupleGirl)
         {
-            if(Girl != null)
-            Girl = GameObject.FindGameObjectWithTag("Girl");
-            if (Boy != null)
-            Boy = GameObject.FindGameObjectWithTag("Boy");
+
+            Girl = GameObject.FindGameObjectWithTag("Point");
+       
+            //Boy = GameObject.FindGameObjectWithTag("Boy");
 
             transform.GetChild(0).GetComponent<Animator>().Play("Walking");
 
@@ -59,9 +59,9 @@ public class Enemy : MonoBehaviour
         }
         if (npc == NpcType.CoupleGirl  && !canMove &&GM.Instance.StartGame)
         {
-            transform.LookAt(Boy.transform);
+            transform.LookAt(Girl.transform);
             float step = MoveSpeed * Time.deltaTime; // calculate distance to move
-            transform.position = Vector3.MoveTowards(transform.position, Boy.transform.position, step);
+            transform.position = Vector3.MoveTowards(transform.position, Girl.transform.position, step);
         }
 
 
@@ -86,7 +86,7 @@ public class Enemy : MonoBehaviour
     public IEnumerator ColliderDisable()
     {
         canMove = true;
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1f);
         colliders.enabled = false;
     }
     public IEnumerator StartWalk()

@@ -46,6 +46,10 @@ public class Movement : MonoBehaviour
         {
             m_Anim.SetTrigger("Stop");
             StartCoroutine(StartAura());
+            if (GM.Instance.FinalSpawn)
+            {
+                StartCoroutine(Win());
+            }
         }
 
         if (!m_CanMove &&GM.Instance.StartGame)
@@ -53,6 +57,7 @@ public class Movement : MonoBehaviour
             float horizontal = Input.GetAxisRaw("Horizontal");
             float vertical = Input.GetAxisRaw("Vertical");
             Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
+          
             if (direction.magnitude >= 0.1f)
             {
                 m_Anim.SetFloat("Speed_f", direction.magnitude);
@@ -75,6 +80,11 @@ public class Movement : MonoBehaviour
 
 
         }
+    }
+    public IEnumerator Win()
+    {
+        yield return new WaitForSeconds(5);
+        GM.Instance.WinPanel.SetActive(true);
     }
 
 }

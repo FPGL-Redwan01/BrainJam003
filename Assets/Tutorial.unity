@@ -6482,8 +6482,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b46d91aaf1a187b4c81cd754eb31a05f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Couple: 0
+  Boy: {fileID: 0}
+  Girl: {fileID: 0}
+  Points: {fileID: 0}
+  MoveSpeed: 0
+  npc: 2
   Wp_Patrol: {fileID: 0}
   colliders: {fileID: 0}
+  Speration: 6
 --- !u!1001 &191490362
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7574,8 +7581,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DontDestroyLoad: 0
   m_IsSingletonLogsEnabled: 0
+  ThreeLabour: {fileID: 0}
+  Lover: {fileID: 0}
+  Point: 0
+  SpreadText: {fileID: 0}
+  Count: 0
   StartPanel: {fileID: 497460206}
+  LoosePnel: {fileID: 0}
+  WinPanel: {fileID: 0}
   StartGame: 0
+  NPC1Time: 0
+  NPC2Time: 0
+  NPC3Time: 0
+  NPC4Time: 0
+  NPC5Time: 0
+  NPC1: {fileID: 0}
+  NPC2: {fileID: 0}
+  NPC3: {fileID: 0}
+  NPC4: {fileID: 0}
+  NPC5: {fileID: 0}
+  FinalSpawn: 0
 --- !u!1001 &223357020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26576,8 +26601,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b46d91aaf1a187b4c81cd754eb31a05f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Couple: 0
+  Boy: {fileID: 0}
+  Girl: {fileID: 0}
+  Points: {fileID: 0}
+  MoveSpeed: 0
+  npc: 2
   Wp_Patrol: {fileID: 613565561}
   colliders: {fileID: 0}
+  Speration: 6
 --- !u!1001 &614675978
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49114,8 +49146,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b46d91aaf1a187b4c81cd754eb31a05f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Couple: 0
+  Boy: {fileID: 0}
+  Girl: {fileID: 0}
+  Points: {fileID: 0}
+  MoveSpeed: 0
+  npc: 2
   Wp_Patrol: {fileID: 190908069}
   colliders: {fileID: 0}
+  Speration: 6
 --- !u!1001 &1284047360
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70400,8 +70439,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b46d91aaf1a187b4c81cd754eb31a05f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Couple: 0
+  Boy: {fileID: 0}
+  Girl: {fileID: 0}
+  Points: {fileID: 0}
+  MoveSpeed: 0
+  npc: 2
   Wp_Patrol: {fileID: 190908069}
   colliders: {fileID: 0}
+  Speration: 6
 --- !u!1001 &2118359215
 PrefabInstance:
   m_ObjectHideFlags: 0
