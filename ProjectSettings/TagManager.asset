@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Girl
   - Boy
+  - Waypoint2
+  - Labour
   layers:
   - Default
   - TransparentFX

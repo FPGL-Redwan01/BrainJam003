@@ -60,7 +60,7 @@ Animator:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: c72c97e952bf7834b85e6164373d310d, type: 3}
-  m_Controller: {fileID: 9100000, guid: 386f7365d213a6547b9c6b920a941a57, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1830d63d942f5bf4e8134db29b2fba78, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -112,8 +112,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MovementSpeed: 2
   TurningSpeed: 1
-  WaypointTag: Waypoint1
-  WpCountdown: 5
+  WaypointTag: Waypoint2
+  WpCountdown: 1
 --- !u!1 &100002
 GameObject:
   m_ObjectHideFlags: 0

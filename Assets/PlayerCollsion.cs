@@ -12,10 +12,9 @@ public class PlayerCollsion : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             StartCoroutine(Animation(other.gameObject));
-            if (other.gameObject.GetComponentInParent<Enemy>().npc != NpcType.CoupleBoy || other.gameObject.GetComponentInParent<Enemy>().npc != NpcType.CoupleGirl)
-            {
+            
                 other.gameObject.GetComponentInParent<Enemy>().StartCoroutine(other.gameObject.GetComponentInParent<Enemy>().StartPatrol());
-            }
+            
                 other.gameObject.GetComponentInParent<Enemy>().StartCoroutine(other.gameObject.GetComponentInParent<Enemy>().ColliderDisable());
                 other.gameObject.GetComponentInParent<Enemy>().StartCoroutine(other.gameObject.GetComponentInParent<Enemy>().StartWalk());
             
@@ -43,7 +42,7 @@ public class PlayerCollsion : MonoBehaviour
         yield return new WaitForSeconds(PushBackDelay);
         g.transform.GetChild(0).gameObject.SetActive(false);
         g.transform.GetChild(01).gameObject.SetActive(true);
-        g.transform.Translate(Vector3.back * 6 * Time.deltaTime);
+        g.transform.Translate(Vector3.back * g.gameObject.GetComponentInParent<Enemy>().Speration * Time.deltaTime);
     }
 
     public IEnumerator DisableCollidre(GameObject g)
