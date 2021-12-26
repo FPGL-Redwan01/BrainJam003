@@ -8,6 +8,7 @@ using UnityEngine.UI;
 
 public class GM : Singleton<GM>
 {
+    public GameObject Tuts;
     public GameObject ThreeLabour , Lover;
     public int Point;
     public Text SpreadText;
@@ -37,10 +38,14 @@ public class GM : Singleton<GM>
     }
     public void Reset()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(2);
     }
     public void StartIt()
     {
+        if (Tuts != null)
+        Tuts.gameObject.SetActive(true);
+
+
         StartPanel.gameObject.SetActive(false);
         StartGame = true;
     }

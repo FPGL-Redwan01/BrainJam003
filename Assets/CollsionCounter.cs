@@ -5,6 +5,7 @@ using UnityEngine;
 public class CollsionCounter : MonoBehaviour
 {
     public Enemy enemy;
+
     void Start()
     {
         enemy = GetComponentInParent<Enemy>();

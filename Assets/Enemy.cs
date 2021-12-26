@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public enum NpcType
 {
     CoupleBoy ,
@@ -13,6 +13,7 @@ public enum NpcType
 
 public class Enemy : MonoBehaviour
 {
+    public bool Tutscene;
     public bool Couple;
     public GameObject Boy, Girl, Points;
     public float MoveSpeed;
@@ -93,5 +94,10 @@ public class Enemy : MonoBehaviour
     {
         yield return new WaitForSeconds(2.4f);
         GetComponentInChildren<Animator>().Play("Walking");
+
+        if(Tutscene)
+        {
+            SceneManager.LoadScene(2);
+        }
     }
 }
